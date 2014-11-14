@@ -1,0 +1,83 @@
+Hacking: 
+--------
+The basic structure is as follows - the transformer(Encoder/transformer.php5) 
+is responsible for converting a piece of text in one format into another.The 
+transformer makes use of a parser to convert the input text into an 
+intermediate(padma) format. 
+
+The basic job of the parser(Encoder/dynamicfontparser.php5) is to break input
+text into syllables. The intermediate format is then converted into the 
+desired output format by using a lookup table.The parser 
+expects each encoding (ex: a font mapping) to implement an
+interface. In general, we have put one encoding in one .php5 file
+(font file).
+
+
+The attributes to be implemented in the font file are:
+
+1. fontFace - how the font is specified in HTML
+2. displayName - currently unused (once upon a time, it was used in the UI
+for heuristic transformer)
+3. script - the script in which the font is typically rendered; the user can
+configure from the auto transform whitelist the script in which she wants a
+site to be rendered.
+4. hasSuffixes - a boolean assumed to be false by default - this is set to
+true for fonts for languages like Devanagari, Gujarati, Kannada etc. These
+languages have complex rules for handling conjuncts that have 'ra' - for
+example in arjun, the syllable 'rju' is rendered with the glyph for 'ra'
+following the glyph for 'ja'.
+5. maxLookupLen - tells how many code points in the input should the parser
+examine before concluding that it has the right mapping. This is the length
+of the longest mapping you will write. Ideally, this would be 1 - but some
+fonts use as much as 4. (This is used in conjunction with isOverloaded()
+API, see below).
+
+In all the following, str is a sequence of codepoints whose 
+length is <= maxLookupLen.
+
+6. lookup(str) - return the intermediate format for str in this encoding
+7. isPrefixSymbol(str) - prefixes are common to all Indic scripts - for
+example the Devanagari vowel sign for 'i'. This API tells the parser if str
+is visually rendered before it's logical position.
+8. isSuffixSymbol(str) - similar to above. Needs to be implemented only if
+hasSuffixes is set to true.
+9. isOverloaded(str) - if str is part of more than one lookup sequence
+return true.
+10. handleTwoPartVowelSigns(str1, str2) - lots of vowel signs have more than
+one glyph, this API is used to handle them.
+
+Currently, parsing is done in two phases - redundant code points are removed
+and syllables are then extracted. In some cases, it may make sense to
+rewrite the input string to avoid complicated special rules - in this case
+preprocessMessage should be implemented:
+
+(either of)
+ isRedundant(str) - if str doesn't add any value to the parser (for ex:
+talakattu in telugu)
+ preProcessMessage(input)
+
+Adding support for new fonts/sites:
+-----------------------------------
+1. Create a font file with mappings between proprietary encoding
+to padma encoding.
+
+eg., Encode/fonts/Eenadu.php5
+
+2. Add the font file in the Encoder/fonts folder
+
+3. Edit config.php5
+    Add a mapping in the $supported_fonts array with sitename as key and 
+fontname as value
+
+eg.,
+"www.eenadu.net" => "eenadu"
+
+4. Edit index.php5
+   Add a mapping in the $sites array with Language and URL of the site
+
+
+eg.,
+"Eenadu" => array ("Language" => "Telugu",
+                   "Status"   => "Working",
+                   "URL"      => "www.eenadu.net")
+

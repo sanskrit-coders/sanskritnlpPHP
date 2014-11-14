@@ -1,0 +1,519 @@
+2009-06-11  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/AAADurga.php5:
+	* Encoder/fonts/AAADurgax.php5:
+	* Encoder/fonts/AAADurgaxx.php5:
+	* Encoder/fonts/Makefile.am:
+	* config.php5:
+	* index.php5: Support for AAADurga, AAADurgax, AAADurgaxx fonts used by
+	Bartaman Patrika. Support for OmNamoVenkatesaya, Lokmat sites.
+	* Encoder/fonts/VaarthaText.php5: Bug fixes.
+
+2009-06-11  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/MillenniumVarunWeb.php5: Bug fixes.
+
+2009-06-05  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Shree_0908W.php5: Support added for SHREE-0908W used by
+	sakshi site.
+	* Encoder/transformer.php5: 
+	* config.php5:
+	* index.php5: Support for sakshi site.
+
+2009-05-29  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/VikaasWebFont.php5: Bug fixes.
+	* Encoder/fonts/Makefile.am: New files added.
+
+2009-05-08  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/VikaasWebFont.php5: Support for vikaaswebfont, priyaankaboldwebfont,
+	pallaviboldwebfont fonts.
+	* Encoder/fonts/VaarthaText.php5: Support for VaarthaText font.
+	* Encoder/fonts/ShreeTam0802.php5: 
+	* Encoder/fonts/Anu.php5: 
+	* Encoder/fonts/Manorama.php5: 
+	* Encoder/fonts/DVW_TTGanesh.php5:
+	* Encoder/fonts/Subak.php5:
+	* Encoder/padma.php5:
+	* Encoder/unicode.php5: Bug fixes.
+	* config.php5: Updated.
+
+2009-05-08  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Shree_Kan_0850: Support for shree-kan-0850w font.
+	* Encoder/fonts/MillenniumVarun.php5: Support for MillenniumVarunFX font
+	* Encoder/fonts/Pudhari.php5: Support added for Shree-Pud-77NW font.
+	and bug fixes.
+	* Encoder/fonts/MillenniumVarunWeb.php5: Support added for
+	MillenniumVarunWeb font used by lokmat.com site.
+	* config.php5: Updated.
+	* index.php5: Removed loksatta.com from the list as it is moved to
+	uniocde.
+
+2009-01-22  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/DVW_TTGanesh.php5: Support added for
+	dvw-ttganesh, dvw-ttganeshen, dvw-ttsurekh, dvw-ttsurekhen, dvw-ttyogesh,
+	dvw-ttyogeshen fonts.
+
+2008-12-23  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/TAM_LFS_Kamban.php5: Support added for
+	tam-lfs-kamban,tam-lfs-kambanwide abd tam-lfs-kambannarrow fonts.
+
+2007-12-10  Vigneswaran R  <vignesh@atc.tcs.com>
+
+	* classwebpage.php5: Dealing urlencoding seperately for unicode
+	conversion and transliteration.
+	* convert_font.sh: file for command line conversion of file or
+	directories.
+
+2008-12-09  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5:
+	* index.php5:Site name changed from 68.178.224.54 to udayavani.com.
+	* TODO: updated.
+
+2008-09-15  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Krutidev.php5: Font mapping for SSA,DA,NNEE added.
+	* functions.php5:Code added to remove single quote around the font
+	name in font-family in style attribute. $debug variable has been
+	introduced to switch on/off debug messages.-- by vignesh.
+
+2008-08-07  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/MillenniumVarun.php5: Support added for
+	MillenniumVarun font,used by loksatta.com.
+	* index.php5: Support added for Loksatta website.
+	* Encoder/fonts/Makefile.am: MillenniumVarun.php5 added.
+
+2008-05-09  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/AabpBengali.php5:
+	* Encoder/fonts/AabpBengalix.php5: Bug fixes.
+
+2008-03-11  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/utf-functions.php5:
+	* transliteration.php5: Added code for converting numeric character
+	references to unicode as it was giving problem.
+
+2008-01-08  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Pudhari.php5:
+	* config.php5: Support added for Shree-Pud-77NL font.
+
+2007-12-28  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Pudhari.php5:
+	* config.php5: support added for shree-pud-77bl font.
+
+2007-12-27  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Pudhari.php5: Support added for Shree-Pudhari font.
+	* config.php5:
+	* index.php5: Support added for Pudhari website.
+	* Encoder/fonts/Makefile.am: Pudhari.php5 added.
+
+2007-12-17  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5:
+	* index.php5: support added for kalamanch website.
+
+2007-11-07  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5: supported_class array of teluguone.com updated.
+
+2007-11-06  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5:
+	* index.php5: Support added for site Netrajyoti Hospital.
+	* gui/convert.php5: License block edited.
+
+2007-10-29  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Kiran.php5: Support added for Kiran,Amruta and Aarti
+	fonts.
+	* Encoder/fonts/Makefile.am: Kiran.php5 added.
+
+2007-10-24  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Manjusha.php5: codepoints added.
+	* classWebPage.php5: renamed as classwebpage.php5.
+	* Makefile.am:
+	* transliterate.php5:
+	* unicode.php5: modified to synchronize with the new file name
+	classwebpage.php5.
+
+2007-10-19  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Shree_Dev_0714.php5: Support added for Shree-Dev-0714
+	font.
+	* Encoder/fonts/Makefile.am: Krutidev.php5,Manjusha.php5 and
+	Shree_Dev_0714.php5 included.
+
+2007-10-17  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5: supported_class array updated for kumudam.com.
+
+2007-10-17  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/Shared.php5:
+	* Encoder/Syllable.php5:
+	* Encoder/Padma.php5:
+	* Encoder/Unicode.php5:
+	* Encoder/transformer.php5:
+	* Encoder/langs/Gujarati.php5:
+	* Encoder/langs/Tamil.php5:
+	* Encoder/langs/Gurumukhi.php5:
+	* Encoder/langs/Kannada.php5:
+	* Encoder/langs/Malayalam.php5:
+	* Encoder/langs/Devanagari.php5:
+	* Encoder/langs/Bengali.php5: file names renamed to lower case.
+	* Encoder/Dynparser.php5: file name renamed to dynamicfontparser.php5
+	* Encoder/fonts/eenadu.php5: file name renamed to uppercase. initialize
+	function name changed accordingly.
+	* HACKING:
+	* Encoder/Makefile.am:
+	* Encoder/fonts/Makefile.am:
+	* Encoder/langs/Makefile.am: modified to synchronize with the new file
+	names.
+
+2007-10-09  Harshita Vani <harshita@atc.tcs.com>
+
+	* index.php5: Support added for Sankhyakiya Patrika, Haribhoomi and
+	AnandaBazar Patrika sites.
+
+2007-10-09  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Krutidev.php5:combo_SHAI added. overloaded list
+	updated.
+
+2007-10-09  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Krutidev.php5: nukta added.
+	* index.php5: Link given to project wiki.
+
+2007-10-08  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Krutidev.php5: Support added for Kruti Dev 010 font.
+	* config.php5:
+	* index.php5: Support added for Prabhasakshi site.
+
+2007-10-06  Vigneswaran R  <vignesh@atc.tcs.com>
+
+	* classWebPage.php5: code to handle the # character in the url has
+	been uncommented. the funtion encode() has been changed so that it
+	will call the function urldecode() before handling the url.
+	changes made such that the # character in the URL will not be encoded.
+	Also the #<name> (anchor) will be at the
+	end of the URL.
+
+2007-10-05  Vigneswaran R  <vignesh@atc.tcs.com>
+
+	* unicode.php5: the web pages will be processed eventhough the website
+	name has not been listed in the config.php5 file.
+	* classWebPage.php5: if the website name is not listed in the
+	config.php5 file, getDomain() function will return empty string
+	instead of boolean false.
+
+2007-10-03  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5:
+	* index.php5: Support added for NTV telugu site.
+
+2007-10-01  Harshita Vani <harshita@atc.tcs.com>
+
+	* gui/padma: Modified as finfo_file() can also return charset depending
+	on the magic.mime file.
+
+2007-09-28  Harshita Vani <harshita@atc.tcs.com>
+
+	* functions.php5: updated as shirdisaiashirvadam.org contains cross
+	closing of tags.
+
+2007-09-26  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/eenadu.php5:
+	* Encoder/fonts/Vaartha.php5: Modified to accomidate configuring 
+	PHP/5.2.4-1 with Suhosin-Patch
+	* Encoder/fonts/Manjusha.php5 : Support added for ManjushaBold and
+	ManjushaMedium fonts.
+	* config.php5:
+	* index.php5: Support added for Daily Kesari site.
+
+2007-09-19  Harshita Vani <harshita@atc.tcs.com>
+
+	* AUTHORS: included new names.
+
+2007-09-19 Sunil Mohan Adapa  <sunil@atc.tcs.com>
+
+	* autogen.sh, configure.ac, */Makefile.am: Added GNU autotools build system to 
+	install the gui and related data files into proper directories on the
+	system.
+	* icons/*: Rearranged the icons into seperate directories to make it
+	convienient for make based installation.
+	* gui/data/padma.desktop: Do not have absolute path for the
+	executable.
+	* NEWS: New empty file for autotools to run.
+	* TODO: The list of items to be done.
+	* gui/convert.php5, gui/padma:Include files based on the location of
+	the executable and not based on the current directory.
+	* win32/*: Added NSIS based windows installer builder done by Radhika.
+
+2007-09-19  Radhika Thammishetty  <radhika@atc.tcs.com>
+
+	* gui/padma: Character_encoding is assigned to the encodingkey.
+	logic of writing into the output file is added.
+	* gui/convert.php5: File modified to use Common functionality present in functions.php5.
+	logic of writing into the output file is removed.
+
+2007-09-19  Vigneswaran R <vignesh@atc.tcs.com>
+
+	* functions.php5: new file created with the functions common to both
+	unicode.php5 and cmd_convert.php5.
+	* unicode.php5, cmd_convert.php5: common code removed and 
+	functions.php5 included.
+	* gui/padma: deprecated function mime_content_type has been replaced
+	with finfo_open, finfo_file, finfo_close functions
+
+2007-09-05  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5: character encoding of rajasthanpatrika.com changed.
+	* gui: Code for desktop application added.
+
+2007-08-29  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Shree_Kan_0850: misinterpretation of glyphs in the
+	font file are corrected.
+
+2007-08-21  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5:
+	* index.php5: Support added for Udayavani and  Hindustan Cables	Limited sites.
+
+2007-08-20  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Shree_Kan_0850.php5: combo_JHI,vattu_YA added.
+
+2007-08-16  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/DV_TTGanesh.php5: Support added for
+	dv-ttganesh, dv-ttganeshen, dv-ttsurekh, dv-ttsurekhen, dv-ttyogesh,
+	dv-ttyogeshen fonts.
+
+2007-07-17  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5:Support added for AmritsarTimes website.
+	* index.php5: Support added for AmritsarTimes website.
+	Updated as sites moved to Unicode.
+
+2007-07-16  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5:
+	* index.php5: Support added for KalaKaumudi, KeralaExpress,Nisot  
+	websites.
+	* Encoder/fonts/BWRevathi.php5: Support added for MLBW-TTRevathi font.
+	* Encoder/langs/Gurmukhi.php5:
+	* Encoder/Unicode.php5:
+	* Encoder/Padma.php5: Support Added for Gurmukhi Script.
+	* Encoder/fonts/DrChatrik.php5: Support added for drchatrikweb font.
+
+2007-07-16  Vigneswaran R <vignesh@atc.tcs.com>
+
+	* Encoder/fonts/Amudham.php5: Some combinations are commented from 
+	overloaded list. So the glyph for consonant LA (or the second part
+	of vowel sign AU) will be considered as consonant LA always.
+
+2007-07-13  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Kalakaumudi.php5: Support added for Kalakaumudi font.
+	
+2007-07-12  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/langs/Bengali.php5: fix for KHANDA TA, RRA.
+	* Encoder/Padma.php5: Modified to accomidate Bengali Khanda TA.
+	* Encoder/fonts/Karthika.php5: Fix for problem with _SRR conjunct.
+	* Encoder/fonts/AabpBengalixx.php5:
+	* Encoder/fonts/AabpBengalix.php5:
+	* Encoder/fonts/AabpBengali.php5: Support added for AabpBengali fonts.
+
+2007-07-12  Vigneswaran R <vignesh@atc.tcs.com>
+
+	* cmd_convert.php5: code added to convert the encoding of all text to UTF-8. Extra comments added.
+
+2007-07-11  Vigneswaran R <vignesh@atc.tcs.com>
+
+	* Encoder/Dynparser.php5:
+	* Encoder/fonts/Vakil.php5:
+	* Encoder/fonts/Vakil01.php5:
+	* Encoder/fonts/Chanakya.php5:
+	* Encoder/fonts/Vikatan.php5:
+	* Encoder/fonts/Jagran.php5:
+	* Encoder/fonts/Kumudam.php5:
+	* Encoder/fonts/Bhaskar.php5:
+	* Encoder/fonts/Shree_Tel_0902.php5:
+	* Encoder/fonts/TSCII_Fonts.php5:
+	* Encoder/fonts/Ujala.php5:
+	* Encoder/fonts/Shivaji.php5:
+	* Encoder/fonts/Shivaji01.php5:
+	* Encoder/fonts/EPatrika.php5:
+	* Encoder/transformer.php5:
+	* transliterate.php5:
+	* girgit.php5:
+	* unicode.php5: 
+	* fileconverterindex.php5:
+	* cmd_convert.php5: "dirname(__FILE__)" added to the file path to
+	avoid relative path problems.
+	* config.php5: support added for valamwebsite, openknowledgenetwork.
+
+2007-07-10  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/fonts/Amudham.php5 : Support added for Amudham font.
+
+2007-07-05  Harshita Vani <harshita@atc.tcs.com>
+
+	* fileconverterindex.php5: display value of combobox modified.
+
+2007-07-04  Vigneswaran R <vignesh@atc.tcs.com>
+
+	* Encoder/transformer.php5:
+	* transliterate.php5:
+	* girgit.php5:
+	* unicode.php5: the function calls to include are replaced with include_once.
+	* cmd_convert.php5: the function calls to include are replaced with include_once.
+	now, font information is taken from $fontinfo global array.
+	* config.php5:
+	* Encoder/fonts/TSCII_Fonts.php5: support for TSCu_InaiMathi font added.
+	* INSTALL: 
+	* README: updated.
+
+2007-06-20  Vigneswaran R <vignesh@atc.tcs.com>
+
+	* INSTALL: usage instructions updated.
+	* cmd_convert.php5: changes made so that the value for the variable $website_name can be 
+	given as optional command line argument 1.
+
+2007-06-20  Vigneswaran R <vignesh@atc.tcs.com>
+
+	* INSTALL: instructions added for command line usage.
+	* cmd_convert.php5: code added to check whether the variable $website_name is already set or not 
+	 before assigning new value.
+
+2007-06-19  Vigneswaran R <vignesh@atc.tcs.com>
+
+	* cmd_convert.php5: new file added. this file can be used as commandline converter.
+	* config.php5: the class name firefox1 has been added to supported_class array for thatskannada.oneindia.in
+
+2007-06-05  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5:supported class added for thatskannada.oneindia.in.
+
+2007-05-21  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5: bhaskar.com and rajasthanpatrika.com encoding changed to utf-8.
+
+2007-05-18  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5:
+	* Anu.php5:  modified add support for anupamabold, ramanabrush, ramanascript,
+	ramanascriptmedium, kranthi, brahma of anu font family.
+
+
+2007-05-15  Vigneswaran R <vignesh@atc.tcs.com>
+
+	* unicode.php5: code added to remove text-align=justify from style
+	attribute.
+
+2007-04-26  Harshita Vani <harshita@atc.tcs.com>
+
+	* Encoder/: Directory structure modified to handle dependencies while loading.
+	* include/: directory renamed as langs.
+	* girgit.php5:modified.
+	* HACKING:
+	* transliterate.php5: modified to handle the new directory structure.
+
+2007-04-25  Harshita Vani <harshita@atc.tcs.com>
+
+	* classWebPage.php5:urldecoding is added before urlencoding to support transliteration on the fly.
+	* girgit.php5:
+	* index.php5:
+	* urlhelp.php5: modified to make it XHTML 1.0 Strict DTD.
+	* Anu.php5: Mapping given to all combinations,replaced telugu digits.
+	* eenadu.php5: Fix for vowelsn_AI.
+	* config.php5: Support added for Anu font family(priyaanka,priyaankabold,anu fonts).
+	* unicode.php5: modified to implement the conversion of a font with different names.
+	* fileconverterindex.php5: Logic of reading a file modified to line by line.
+	* parser.php5: unnecessary loop removed.
+
+2007-04-02  Harshita Vani <harshita@atc.tcs.com>
+
+	* SHREE_MAL_0501.php5: modified due to CA + chandrakkala + CA was wrongly interpreted as PA + chandrakkala + PA.
+
+2007-03-20  Harshita Vani <harshita@atc.tcs.com>
+
+	* unicode.php5: checking added so that the unsupported
+	websites will not be proxied through unigateway
+	* classWebPage.php5: the post variables are droped while url
+	redirection.
+	* fileconverterindex.php5:
+	* Anu.php5 : Added.
+	* index.php5 : Link added for converting a textfile into unicode.
+
+2007-02-22  Harshita Vani <harshita@atc.tcs.com>
+
+	* classWebPage.php5: modified to support transliteration on
+	the fly and to implement subdomain matching.
+
+	* config.php5:
+	* unicode.php5: modified to implement subdomain matching.
+	* index.php5: contact added. 
+
+2007-02-06  Harshita Vani <harshita@atc.tcs.com>
+	
+	* config.php5: modified.
+
+2007-01-22  Harshita Vani <harshita@atc.tcs.com>
+
+	* config.php5: content_encodings array modified.
+
+2007-01-19  Harshita Vani <harshita@atc.tcs.com>
+
+	* SuriTln.php5: Fix for JHA, TCH replaced with TSA and TJ with DJA.
+	prefixList modified.
+	* Tikkana.php5: TCH replaced with TSA and TJ with DJA.
+	* Bengali.php5: added.
+	* Devanagari.php5: Sindhi characters added.
+	* Padma.php5: modofied to support new Telugu characters and Bengali.
+	* telugu.php5: New codepoints added.
+	* Unicode.php5: modified to support Bengali.
+
+2007-01-17  Harshita Vani <harshita@atc.tcs.com>
+
+	* transliterate.php5:
+	* girgit.php5: modified to fix the problem with button tag.
+
+2007-01-15  Harshita Vani <harshita@atc.tcs.com>
+
+	* utf-functions.php5: uniord() function added.
+	* girgit.php5:
+	* urlhelp.html:
+	* transliterate.php5: files added to support transliteration.
+	* config.php5:
+	* classWebPage.php5: modified.
+	* index.php5: Transliteration link added.
+
+2006-12-22  Harshita Vani <harshita@atc.tcs.com>
+
+	* AUTHORS:
+	* README:
+	* INSTALL:
+	* HACKING: added
+
+2006-12-20  Harshita Vani <harshita@atc.tcs.com>
+
+	* First CVS Upload at Sourceforge.net
+
