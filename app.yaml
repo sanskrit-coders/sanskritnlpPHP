@@ -7,3 +7,8 @@ threadsafe: true
 handlers:
 - url: /hello
   script: helloworld.php
+
+handlers:
+- url: /unicodify/(.*)
+  script: /unigateway/\1
+

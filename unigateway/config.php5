@@ -53,7 +53,7 @@ $dont_download_mimes = Array(
 * the proxy work on all ips (by     *
 * absolute URLs)                    *
 \***********************************/
-$server = "http://uni.medhas.org";
+$server = "http://sanskritnlp.appspot.com/unicodify";
 #$server = "http://localhost/proxy";
 
 #$redirectIP = "";
