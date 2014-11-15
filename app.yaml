@@ -2,7 +2,7 @@ application: sanskritnlpphp
 version: 1
 runtime: php
 api_version: 1
-threadsafe = true
+threadsafe: true
 
 handlers:
 - url: /hello
