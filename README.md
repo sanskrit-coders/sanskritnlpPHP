@@ -1,4 +1,5 @@
 Homepage: https://sites.google.com/site/sanskritcode/
 
-Current host: sanskritnlpPHP.appspot.com
+Current host: https://sanskritnlpPHP.appspot.com
 	
+Currently this does not contain anything functioning.
